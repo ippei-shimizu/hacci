@@ -1,0 +1,134 @@
+@use "../setting/index" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Alice-Regular";
+  src: url("../fonts/Alice-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "thefrenchkiss";
+  src: url("../fonts/thefrenchkiss.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-bg;
+  font-family: "a-otf-ud-reimin-pr6n", "a-otf-gothic-mb101-pr6n",
+    "hiragino-kaku-gothic-pron", sans-serif;
+  color: $color-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+  font-family: $family-alice-regular;
+}
+
+p,
+span,
+strong,
+td,
+a {
+  font-family: $family-gothic;
+}
+
+.header__inner {
+  padding-top: 56px;
+}
+
+.header__top {
+  padding-bottom: 24px;
+  a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    .logo {
+      display: block;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 8px;
+      position: absolute;
+      top: -100px;
+    }
+  }
+}
+
+.header__bottom {
+  display: grid;
+  grid-template-columns: 265px 1fr 300px;
+}
+
+.header__web__btn {
+  a {
+    display: block;
+    width: 265px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.18em;
+    font-family: $family-kaku-gothic;
+    text-align: center;
+    background-color: #fff;
+    padding: 14.5px 4px;
+    position: relative;
+    &::after {
+      content: "";
+      width: 15.5px;
+      height: 15.5px;
+      background-color: $color-main;
+      -webkit-mask-image: url(../assets/images/icon-link.svg);
+      mask-image: url(../assets/images/icon-link.svg);
+      -webkit-mask-size: contain;
+      mask-size: contain;
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      text-indent: 0;
+      position: absolute;
+      top: 50%;
+      right: 62px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.header__nav {
+  ul {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: flex-end;
+    gap: 5%;
+    .header__nav__list {
+      a {
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0.1em;
+        font-family: $family-alice-regular;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.header__sns {
+  display: flex;
+  gap: 8px;
+}
