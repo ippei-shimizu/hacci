@@ -1,0 +1,8 @@
+@use "../setting/index" as *;
+
+.style {
+  background-color: #000;
+  &__inner {
+    padding: 168px 24px ;
+  }
+}

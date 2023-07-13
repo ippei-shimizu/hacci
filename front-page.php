@@ -147,19 +147,15 @@
               <p>縮毛矯正</p>
               <span>¥13,200</span>
             </div>
-          </div>
-          <div class="menu__hair__content">
             <div class="menu__hair__price">
               <p>前髪ストレート</p>
               <span>￥5,500〜</span>
             </div>
-          </div>
-          <div class="menu__hair__content">
             <div class="menu__hair__price">
               <p>ポイントストレート</p>
               <span>￥7,700〜</span>
             </div>
-          </div>
+        </div>
         </div>
         <div class="menu__hair__item">
           <h4>Treatment Menu</h4>
@@ -168,14 +164,12 @@
               <p>トリートメント</p>
               <span>¥5,500</span>
             </div>
-          </div>
-          <div class="menu__hair__content">
             <div class="menu__hair__price">
               <p>TOKIO</p>
               <span>¥6,600</span>
             </div>
-          </div>
-        </div>       
+        </div>   
+        </div>    
         <div class="menu__hair__item">
           <h4>Other Menu</h4>
           <div class="menu__hair__content">
@@ -183,19 +177,15 @@
               <p>セット</p>
               <span>¥4,400</span>
             </div>
-          </div>
-          <div class="menu__hair__content">
             <div class="menu__hair__price">
               <p>ヘッドスパ</p>
               <span>￥4,400</span>
             </div>
-          </div>
-          <div class="menu__hair__content">
             <div class="menu__hair__price">
               <p>シャンプーブロー</p>
               <span>￥2,200</span>
             </div>
-          </div>
+            </div>
         </div>           
       </div>
     </div>
@@ -212,14 +202,17 @@
               <p>エクステ</p>
               <span>¥5,500</span>
             </div>
+            <div class="menu__border"></div>
             <div class="menu__hair__price">
               <p>カラーエクステ</p>
               <span>+¥550</span>
             </div>
+            <div class="menu__border"></div>
             <div class="menu__hair__price">
               <p>ラッシュリフト</p>
               <span>¥5,500</span>
             </div>
+            <div class="menu__border"></div>
             <div class="menu__hair__price">
               <p>アイシャンプー</p>
               <span>+¥550</span>
@@ -241,39 +234,123 @@
               <p>顔全体</p>
               <span>¥6,000</span>
             </div>
+            <div class="menu__border"></div>
             <div class="menu__hair__price">
               <p>鼻下</p>
               <span>¥1,500</span>
             </div>
+            <div class="menu__border"></div>
             <div class="menu__hair__price">
               <p>ほほ</p>
               <span>￥2,500</span>
             </div>
+            <div class="menu__border"></div>
             <div class="menu__hair__price">
               <p>あご</p>
               <span>￥2,000</span>
             </div>
+            <div class="menu__border"></div>
             <div class="menu__hair__price">
               <p>襟足</p>
               <span>￥2,500</span>
             </div>
+            <div class="menu__border"></div>
             <div class="menu__hair__price">
               <p>両ワキ</p>
               <span>￥3,000</span>
             </div>
+            <div class="menu__border"></div>
             <div class="menu__hair__price">
               <p>両ヒジ</p>
               <span>￥5,000</span>
             </div>
+            <div class="menu__border"></div>
             <div class="menu__hair__price">
               <p>両ヒザ下</p>
               <span>￥5,000</span>
             </div>
           </div>
+          <p class="menu__hair__caption">※施術可能部位…23箇所</p>
         </div>
       </div>
     </div>
-    <p class="menu__hair__caption">※施術可能部位…23箇所</p>
+  </div>
+</section>
+
+<section id="Style" class="style">
+  <div class="style__inner">
+    <div class="section__title__box">
+      <h2 class="section__title">Style</h2>
+      <span class="section__num">03</span>
+    </div>
+    <div class="style__instagram">
+
+    </div>
+  </div>
+</section>
+
+<section id="Tokio" class="tokio">
+  <div class="tokio__inner">
+    <div class="tokio__contents">
+      <div class="tokio__contents__01">
+        <div class="section__title__box">
+          <h2 class="section__title">TOKIO</h2>
+          <span class="section__num">04</span>
+        </div>
+        <p class="tokio__text">話題の「TOKIO インカラミ トリートメント」を導入しています。<br>
+  ホームケア用の販売もしております。詳細に関しましては、お問い合わせください。
+        </p>
+        <div class="contact__btn">
+          <a href="tel:055-288-0202">お問い合わせ</a>
+        </div>
+        <div class="tokio__img tokio__img__01">
+          <picture>
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/tokio-01.webp" type="image/webp">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tokio-01.png" alt="ヘアケア商品" width="1126px" height="716px" loading="lazy">
+          </picture>
+        </div>
+      </div>
+      <div class="tokio__img tokio__img__02">
+          <picture>
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/tokio-02.webp" type="image/webp">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tokio-02.png" alt="ヘアケア商品" width="1096px" height="1514px" loading="lazy">
+          </picture>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="staff">
+  <div class="staff__inner">
+    <div class="section__title__box">
+      <h2 class="section__title">Staff</h2>
+      <span class="section__num">05</span>
+    </div>
+    <div class="staff__contents">
+      <div class="staff__img">
+        <picture>
+          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/staff.webp" type="image/webp">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/staff.png" alt="スタッフ写真" width="2006px" height="1336px" loading="lazy">
+        </picture>
+      </div>
+      <div class="staff__member">
+        <div class="staff__item">
+          <p class="staff__position">Esthéticien</p>
+          <h3 class="staff__name">AYUMI<br>HARA</h3>
+          <h4 class="staff__name__ja">原 亜由美</h4>
+        </div>
+        <div class="staff__item">
+          <p class="staff__position">Assistant</p>
+          <h3 class="staff__name">SAORI<br>MURAKAMI</h3>
+          <h4 class="staff__name__ja">村上 沙織</h4>
+        </div>
+        <div class="staff__item">
+          <p class="staff__position">Owner & Stylist</p>
+          <h3 class="staff__name">AZUSA<br>YAMAGATA</h3>
+          <h4 class="staff__name__ja">山形 梓</h4>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

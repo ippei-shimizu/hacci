@@ -1,0 +1,60 @@
+@use "../setting/index" as *;
+
+.tokio {
+  &__inner {
+    width: 84%;
+    margin: 0 auto;
+    max-width: 1360px;
+    padding: 326px 24px 346px;
+  }
+  .section__title__box {
+    margin: 0px 0 0 46px;
+  }
+}
+
+.tokio__contents {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.tokio__img {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.tokio__img__01 {
+  margin: 0 -108px 0 0;
+  position: relative;
+}
+
+.tokio__img__02 {
+  min-width: 548px;
+}
+
+.tokio__text {
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0.14em;
+  line-height: 35px;
+  margin: 182px 24% 86px 0;
+}
+
+.contact__btn {
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 148px;
+  a {
+    display: block;
+    width: 238px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 14px;
+    line-height: 35px;
+    letter-spacing: 0.14em;
+    padding: 7.5px;
+  }
+}
