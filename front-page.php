@@ -320,7 +320,7 @@
   </div>
 </section>
 
-<section class="staff">
+<section id="Staff" class="staff">
   <div class="staff__inner">
     <div class="section__title__box">
       <h2 class="section__title">Staff</h2>
@@ -353,6 +353,87 @@
     </div>
   </div>
 </section>
+
+<section id="Access" class="access">
+  <div class="access__inner">
+    <div class="access__container">
+      <div class="google__map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9924.503950440429!2d138.53454442259422!3d35.648146315340284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601bf76e8cfcef75%3A0x85767346e69d7096!2z44OY44Ki44O844Or44O844Og44OP44OD44OB!5e0!3m2!1sja!2sjp!4v1689265351974!5m2!1sja!2sjp" width="727" height="519" style="border:0;filter:grayscale(100%);-webkit-filter:grayscale(100%)" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="access__contents">
+        <div class="section__title__box">
+          <h2 class="section__title">Access</h2>
+          <span class="section__num">06</span>
+        </div>
+        <div class="access__address">
+          <p class="access__address__text">〒409-3867<br>
+山梨県中巨摩郡昭和町清水新居1530</p>
+          <div class="google__map__btn">
+            <a href="https://goo.gl/maps/6zMQawnrJRN5KB6r8" target="_blank">Google Map</a>
+          </div>
+        </div>
+        <div class="business-hours">
+          <p class="time">Open : 9：30-<br>
+Close : 毎週月曜日 / 日曜日</p>
+          <span>その他都合によりお休みを頂く場合があります</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bottom__slide">
+  <div class="bottom__slide__inner">
+    <div class="bottom-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="swiper-img">
+              <picture>
+                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-01.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-01.png">
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-01.webp" type="image/webp">
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-01.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-01.png" alt="施術風景" width="2732px" height="874px">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img">
+            <picture>
+            <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-02.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-02.png">
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-02.webp" type="image/webp">
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-02.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-02.png" alt="施術風景" width="2732px" height="874px">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img">
+            <picture>
+                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-03.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-03.png">
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-03.webp" type="image/webp">
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-03.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-03.png" alt="施術風景" width="2732px" height="874px">
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img">
+            <picture>
+                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-04.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-04.png">
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-04.webp" type="image/webp">
+                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-04.png">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-04.png" alt="施術風景" width="2732px" height="874px">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>    
+  </div>
+</div>
 
 
 <?php get_footer(); ?>
