@@ -573,6 +573,8 @@ a {
     margin-top: 72px;
     font-size: 11.2px;
     line-height: 28px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -590,6 +592,8 @@ a {
     font-size: 8.4px;
     line-height: 18px;
     text-align: left;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -1036,6 +1040,14 @@ a {
   letter-spacing: 0.14em;
   padding: 7.5px;
   transition: background-color 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), border-color 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@media screen and (max-width:760px) {
+  .contact__btn a {
+    font-size: 8.62px;
+    width: 146px;
+    line-height: 21px;
+    padding: 2.5px;
+  }
 }
 .contact__btn a:hover {
   background-color: #fff;

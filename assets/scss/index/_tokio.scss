@@ -147,6 +147,12 @@
     transition: background-color .6s $cubic, 
     color .6s $cubic,
     border-color .6s $cubic;
+    @include media(bp760) {
+      font-size: 8.62px;
+      width: 146px;
+      line-height: 21px;
+      padding: 2.5px;
+    }
     &:hover {
       background-color: #fff;
       color: $color-main;
