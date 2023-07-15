@@ -34,22 +34,22 @@
         <nav class="header__nav">
           <ul>
             <li class="header__nav__list">
-              <a href="#Concept">Concept</a>
+              <a class="page-link" href="#Concept"><span>Concept</span><span>コンセプト</span></a>
             </li>
             <li class="header__nav__list">
-              <a href="#Menu">Menu</a>
+              <a class="page-link" href="#Menu"><span>Menu</span><span>メニュー</span></a>
             </li>
             <li class="header__nav__list">
-              <a href="#Style">Style</a>
+              <a class="page-link" href="#Style"><span>Style</span><span>スタイル</span></a>
             </li>
             <li class="header__nav__list">
-              <a href="#Tokio">TOKIO</a>
+              <a class="page-link" href="#Tokio"><span>TOKIO</span><span>トキオ</span></a>
             </li>
             <li class="header__nav__list">
-              <a href="#Staff">Staff</a>
+              <a class="page-link" href="#Staff"><span>Staff</span><span>スタッフ</span></a>
             </li>
             <li class="header__nav__list">
-              <a href="#Access">Access</a>
+              <a class="page-link" href="#Access"><span>Access</span><span>アクセス</span></a>
             </li>
           </ul>
         </nav>
@@ -73,3 +73,87 @@
       </div>
     </div>
   </header>
+
+  <div class="sp__header">
+    <div class="sp__header__inner">
+      <div class="sp__header__flex">
+        <div class="header__web__btn sp__header__web__btn">
+          <a class="web__reservation" href="https://beauty.hotpepper.jp/slnH000319382/" target="_blank">WEBご予約</a>
+        </div>
+        <ul class="sp__header__sns">
+          <li>
+            <a href="https://www.instagram.com/hacci.azu/" target="_blank">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-instagram-white.svg" alt="instagram" width="30px" height="30px">
+            </a>
+          </li>
+          <li>
+            <a href="https://line.me/R/ti/p/EjBsNFYLlx" target="_blank">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-line-white.svg" alt="line" width="30px" height="30px">
+            </a>            
+          </li>
+          <li>
+            <a href="tel:055-288-0202">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-tel-white.svg" alt="お電話での予約" width="30px" height="30px">
+            </a>           
+          </li>
+        </ul>
+        <button id="hamburger" class="hamburger">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="spNav" class="sp__nav">
+    <div class="sp__nav__inner">
+      <div class="header__top">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="ヘアールームハッチ" class="logo" width="130px" height="43px">
+        </a>
+      </div>
+        <nav class="sp__nav__box">
+          <ul>
+            <li class="sp__nav__list">
+              <a class="page-link" href="#Concept">Concept</a>
+            </li>
+            <li class="sp__nav__list">
+              <a class="page-link" href="#Menu">Menu</a>
+            </li>
+            <li class="sp__nav__list">
+              <a class="page-link" href="#Style">Style</a>
+            </li>
+            <li class="sp__nav__list">
+              <a class="page-link" href="#Tokio">TOKIO</a>
+            </li>
+            <li class="sp__nav__list">
+              <a class="page-link" href="#Staff">Staff</a>
+            </li>
+            <li class="sp__nav__list">
+              <a class="page-link" href="#Access">Access</a>
+            </li>           
+          </ul>
+        </nav>
+        <div class="header__web__btn">
+          <a class="web__reservation" href="https://beauty.hotpepper.jp/slnH000319382/" target="_blank">WEBご予約</a>
+        </div>
+        <ul class="sp__header__sns">
+          <li>
+            <a href="https://www.instagram.com/hacci.azu/" target="_blank">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-instagram-white.svg" alt="instagram" width="30px" height="30px">
+            </a>
+          </li>
+          <li>
+            <a href="https://line.me/R/ti/p/EjBsNFYLlx" target="_blank">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-line-white.svg" alt="line" width="30px" height="30px">
+            </a>            
+          </li>
+          <li>
+            <a href="tel:055-288-0202">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-tel-white.svg" alt="お電話での予約" width="30px" height="30px">
+            </a>           
+          </li>
+        </ul>       
+    </div>
+  </div>

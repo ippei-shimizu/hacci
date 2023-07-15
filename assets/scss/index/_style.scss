@@ -3,6 +3,18 @@
 .style {
   background-color: #000;
   &__inner {
-    padding: 168px 24px ;
+    padding: 168px 24px;
+    @include media(bp760) {
+      padding-top: 70px;
+      padding-bottom: 60px;
+    }
+  }
+  &.visible {
+    .section__title {
+      animation: blurAnime 1s forwards .6s;
+    }
+    .section__num {
+      animation: blurAnime2 1s forwards;
+    }
   }
 }

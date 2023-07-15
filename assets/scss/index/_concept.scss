@@ -1,8 +1,45 @@
 @use "../setting/index" as *;
 
 .concept {
+  &.visible {
+    .section__title {
+      animation: blurAnime 1s forwards 1s;
+    }
+    .section__num {
+      animation: blurAnime2 1s forwards .4s;
+    }
+  }
   &__inner {
     padding: 242px 24px 168px;
+    @include media(bp760) {
+      padding: 92px 24px 48px;
+    }
+  }
+}
+
+@keyframes blurAnime{
+  from {
+	filter: blur(10px);
+	transform: scale(1.02);
+	opacity: 0;
+  }
+
+  to {
+	filter: blur(0);
+	transform: scale(1);
+	opacity: 1;
+  }
+}
+
+@keyframes blurAnime2{
+  from {
+	filter: blur(10px);
+	opacity: 0;
+  }
+
+  to {
+	filter: blur(0);
+	opacity: 0.3;
   }
 }
 
@@ -19,6 +56,10 @@
   color: #fff;
   position: relative;
   z-index: 1;
+  opacity: 0;
+  @include media(bp760) {
+    font-size: 28px;
+  }
 }
 
 .section__num {
@@ -30,17 +71,30 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.3;
+  opacity: 0;
+  @include media(bp760) {
+    font-size: 135px;
+  }
 }
 
 .concept__text__top {
   text-align: center;
   margin: 182px auto 84px;
+  @include media(bp760) {
+    margin-top: 72px;
+    margin-bottom: 32px;
+  }
   p {
     font-size: 20px;
+    font-family: $family-gothic-m;
     letter-spacing: 0.2em;
     line-height: 53px;
     color: #fff;
+    @include media(bp760) {
+      margin-top: 72px;
+      font-size: 11.2px;
+      line-height: 28px;
+    }
   }
 }
 
@@ -51,6 +105,11 @@
     font-size: 14px;
     line-height: 35px;
     letter-spacing: 0.14em;
+    @include media(bp760) {
+      font-size: 8.4px;
+      line-height: 18px;
+      text-align: left;
+    }
   }
 }
 
@@ -58,9 +117,23 @@
   width: 100%;
   height: 27vw;
   padding: 0 82px;
+  @include media(bp924) {
+    padding: 0 24px;
+  }
+  @include media(bp760) {
+    padding: 0;
+    height: 46.5vw;
+  }
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+.concept_img {
+  opacity: 0;
+  &.visible {
+    animation: blurAnime 1s forwards .2s;
   }
 }

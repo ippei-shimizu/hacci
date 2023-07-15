@@ -29,7 +29,20 @@
       </div>
     </div>
     <div class="footer__sp">
-
+      <div class="footer__tel">
+        <p>contact：</p>
+        <a href="tel:055-288-0202">055-288-0202</a>
+      </div>
+      <div class="footer__sns">
+        <a href="https://www.instagram.com/hacci.azu/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-instagram-white.svg" alt="instagram" width="22px" height="22px"></a>
+        <a href="https://line.me/R/ti/p/EjBsNFYLlx" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-line-white.svg" alt="line" width="22px" height="22px"></a>
+      </div>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" alt="ヘアールームハッチ" class="logo" width="233px" height="76px">
+      </a>
+      <button id="pageBtn" class="page__top__button">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top-btn.svg" alt="ページトップ" width="42px" height="42px">
+      </button>
     </div>
     <p class="copy">&copy; Hair room Hacci. ALL RIGHTS RESERVED.</p>
   </div>

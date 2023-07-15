@@ -6,22 +6,53 @@
     margin: 0 auto;
     max-width: 1360px;
     padding: 0 24px 356px;
+    @include media(bp860) {
+      width: 94%;
+    }
+    @include media(bp760) {
+      width: 100%;
+      padding-bottom: 84px;
+    }
+  }
+  &.visible {
+    .section__title {
+      animation: blurAnime 1s forwards .6s;
+    }
+    .section__num {
+      animation: blurAnime2 1s forwards;
+    }
   }
 }
 
 .staff__contents {
   padding-top: 240px;
   margin: 0 auto;
+  @include media(bp760) {
+    padding-top: 100px;
+  }
 }
 
 .staff__img {
   min-height: 668px;
+  @include media(bp760) {
+    min-height: auto;
+  }
+  &.visible {
+    img {
+      animation: blurAnime 1s forwards .1s;
+    }
+  }
   img {
     width: 100%;
     height: 100%;
+    min-height: 554px;
     object-fit: cover;
     display: block;
     margin: 0 auto;
+    opacity: 0;
+    @include media(bp760) {
+      min-height: auto;
+    }
   }
 }
 
@@ -33,6 +64,22 @@
   width: 108%;
   position: relative;
   left: -4%;
+  opacity: 0;
+  @include media(bp860) {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 98px;
+    left: 0;
+  }
+  @include media(bp760) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  &.visible {
+    animation: blurAnime 1s forwards .1s;
+  }
 }
 
 .staff__item {
@@ -40,22 +87,53 @@
   background-color: $color-bg;
   width: 251px;
   padding: 40px 24px;
+  @include media(bp860) {
+    margin: 0 auto;
+    width: 336px;
+  }
+  @include media(bp760) {
+    border-top: 3px solid #fff;
+    width: 100%;
+    padding: 18px 18px 42px;
+  }
 }
 
 .staff__position {
   font-size: 14px;
   letter-spacing: 0.14em;
+  @include media(bp760) {
+    font-size: 8.4px;
+  }
+}
+
+.staff__name__box {
+  @include media(bp860) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
 }
 
 .staff__name {
   font-size: 20px;
   letter-spacing: 0.14em;
-  font-family: $family-gothic;
+  font-family: $family-gothic-m;
   padding: 12px 0 32px;
   line-height: 35px;
+  @include media(bp760) {
+    font-size: 12.13px;
+    line-height: 19.6px;
+    padding-bottom: 0;
+  }
 }
 
 .staff__name__ja {
   font-size: 14px;
   letter-spacing: 0.52em;
+  @include media(bp860) {
+    text-align: right;
+  }
+  @include media(bp760) {
+    font-size: 9px;
+  }
 }

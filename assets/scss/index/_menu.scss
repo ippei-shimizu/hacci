@@ -3,8 +3,25 @@
 .menu {
   &__inner {
     padding: 242px 24px 168px;
+    @include media(bp760) {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 124px;
+      padding-bottom: 182px;
+    }
     .section__title__box {
       margin-bottom: 168px;
+      @include media(bp760) {
+        margin-bottom: 68px;
+      }
+    }
+  }
+  &.visible {
+    .section__title {
+      animation: blurAnime 1s forwards 0.6s;
+    }
+    .section__num {
+      animation: blurAnime2 1s forwards;
     }
   }
 }
@@ -14,16 +31,26 @@
   text-align: center;
   width: fit-content;
   margin: 0 auto 46px;
+  @include media(bp760) {
+    margin-bottom: 24px;
+  }
   h3 {
     font-size: 30px;
     line-height: 27px;
     letter-spacing: 0.1em;
     padding-bottom: 14px;
+    @include media(bp760) {
+      font-size: 16.8px;
+      padding-bottom: 2px;
+    }
   }
   p {
     font-size: 14px;
     font-family: $family-reimin;
     letter-spacing: 0.14em;
+    @include media(bp760) {
+      font-size: 8px;
+    }
   }
 }
 
@@ -32,14 +59,25 @@
   justify-content: center;
   gap: 100px;
   padding-bottom: 200px;
+  @include media(bp860) {
+    display: block;
+  }
+  @include media(bp760) {
+    padding-bottom: 82px;
+  }
 }
 
 .menu__hair__box {
   color: #fff;
   width: 451px;
+  @include media(bp860) {
+    width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
 }
 .menu__hair__box__border {
-  .menu__hair__content  {
+  .menu__hair__content {
     padding-left: 0;
     padding-right: 0;
     border-bottom: 2px solid #fff;
@@ -53,34 +91,107 @@
   width: 100%;
   height: 2px;
   background-color: $color-border;
+  @include media(bp760) {
+    height: 1px;
+  }
 }
 
 .menu__hair__item {
   border-top: 6px solid #fff;
+  @include media(bp760) {
+    border-top: 3px solid #fff;
+  }
+  &.visible {
+    h4 {
+      opacity: 1;
+      &::before {
+        width: 0;
+      }
+    }
+  }
   h4 {
     font-size: 30px;
     line-height: 27px;
     letter-spacing: 0.1em;
-    border-bottom: 2px solid #fff;
     padding: 14px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.6s $cubic 0.4s;
+    @include media(bp760) {
+      font-size: 16.8px;
+      padding: 6px;
+    }
+    &::before {
+      content: "";
+      width: 100%;
+      height: 96%;
+      background-color: $color-bg;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform-origin: left center;
+      transition: width 1.6s cubic-bezier(0.32, 0.94, 0.6, 1) 0.2s;
+      z-index: 2;
+    }
+  }
+  hr {
+    background-color: #fff;
+    height: 1px;
+    @include media(bp760) {
+      height: 0;
+    }
   }
 }
 .menu__hair__content {
   padding: 22px 14px 42px;
+  @include media(bp760) {
+    padding: 12px 6px 24px;
+  }
   .menu__hair__price {
     display: flex;
     justify-content: space-between;
     padding: 16px 0;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.6s $cubic 0.2s;
+    @include media(bp760) {
+      padding: 6px 0;
+    }
+    &.visible {
+      opacity: 1;
+      &::before {
+        width: 0;
+      }
+    }
+    &::before {
+      content: "";
+      width: 100%;
+      height: 96%;
+      background-color: $color-bg;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform-origin: left center;
+      transition: width 1.6s cubic-bezier(0.32, 0.94, 0.6, 1) 0.2s;
+      z-index: 2;
+    }
     p {
       font-size: 18px;
       letter-spacing: 0.14em;
       flex-shrink: 0;
+      @include media(bp760) {
+        font-size: 10.8px;
+      }
     }
     span {
       font-size: 18px;
       letter-spacing: 0.14em;
       font-family: $family-reimin;
       flex-shrink: 0;
+      @include media(bp760) {
+        font-size: 10.8px;
+      }
     }
   }
 }
@@ -89,4 +200,8 @@
   font-size: 18px;
   letter-spacing: 0.14em;
   padding: 12px;
+  @include media(bp760) {
+    font-size: 10.8px;
+    padding: 6px;
+  }
 }

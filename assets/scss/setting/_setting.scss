@@ -6,7 +6,24 @@ $color-border: #b2a99e;
 
 // font-family
 $family-reimin: "a-otf-ud-reimin-pr6n";
-$family-gothic: "a-otf-gothic-mb101-pr6n";
+$family-gothic: "A-OTF-GothicMB101Pro-Light.otf";
+$family-gothic-m: "A-OTF-GothicMB101Pro-Medium.otf";
 $family-kaku-gothic:  "ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN","メイリオ","Meiryo",sans-serif;
 $family-alice-regular: "Alice-Regular";
 $family-thefrenchkiss: "thefrenchkiss";
+
+$cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+//メディアクエリ
+@mixin media($breakpoint: md) {
+  @media #{map-get($breakpoint-up,$breakpoint)} {
+    @content;
+  }
+}
+//ブレイクポイント
+$breakpoint-up: (
+  'bp1200': 'screen and (max-width:1200px)',
+  'bp924': 'screen and (max-width:924px)',
+  'bp860': 'screen and (max-width:860px)',
+  'bp760': 'screen and (max-width:760px)',
+) !default;

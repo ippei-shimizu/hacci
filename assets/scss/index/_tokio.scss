@@ -6,9 +6,29 @@
     margin: 0 auto;
     max-width: 1360px;
     padding: 326px 24px 346px;
+    @include media(bp1200) {
+      width: 94%;
+    }
+    @include media(bp760) {
+      width: 100%;
+      padding-top: 124px;
+      padding-bottom: 160px;
+    }
   }
   .section__title__box {
     margin: 0px 0 0 46px;
+    @include media(bp860) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &.visible {
+    .section__title {
+      animation: blurAnime 1s forwards .6s;
+    }
+    .section__num {
+      animation: blurAnime2 1s forwards;
+    }
   }
 }
 
@@ -17,22 +37,66 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  &.visible {
+    .tokio__img__02 {
+      img {
+        animation: blurAnime 1s forwards .1s;
+      }
+    }
+    .tokio__img__01 {
+      img {
+        animation: blurAnime 1s forwards 1.4s;
+      }
+    }
+  }
 }
 
 .tokio__img {
   img {
     width: 100%;
     height: auto;
+    opacity: 0;
   }
 }
 
 .tokio__img__01 {
   margin: 0 -108px 0 0;
   position: relative;
+  @include media(bp860) {
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include media(bp760) {
+    padding: 0;
+  }
+  img {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .tokio__img__02 {
   min-width: 548px;
+  @include media(bp1200) {
+    min-width: 442px;
+  }
+  @include media(bp860) {
+    display: none;
+  }
+}
+
+.tokio__wrap {
+  @include media(bp860) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 186px;
+  }
+  @include media(bp760) {
+    margin-top: 82px;
+  }
 }
 
 .tokio__text {
@@ -41,12 +105,36 @@
   letter-spacing: 0.14em;
   line-height: 35px;
   margin: 182px 24% 86px 0;
+  @include media(bp1200) {
+    margin-right: 12%;
+  }
+  @include media(bp860) {
+    width: 100%;
+    padding-left: 54px;
+    padding-right: 54px;
+    margin: 60px auto;
+  }
+  @include media(bp760) {
+    margin: 48px auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 10px;
+    line-height: 20px;
+  }
 }
 
 .contact__btn {
   width: fit-content;
   text-align: center;
   margin-bottom: 148px;
+  @include media(bp1200) {
+    margin-bottom: 84px;
+  }
+  @include media(bp860) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
   a {
     display: block;
     width: 238px;
@@ -56,5 +144,13 @@
     line-height: 35px;
     letter-spacing: 0.14em;
     padding: 7.5px;
+    transition: background-color .6s $cubic, 
+    color .6s $cubic,
+    border-color .6s $cubic;
+    &:hover {
+      background-color: #fff;
+      color: $color-main;
+      border-color: $color-main;
+    }
   }
 }

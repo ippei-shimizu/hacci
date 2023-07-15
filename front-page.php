@@ -7,10 +7,10 @@
         <div class="swiper-slide">
             <div class="swiper-img">
               <picture>
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-01.webp" type="image/webp">
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-01.png">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-01.webp" type="image/webp">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-01.png">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-01.webp" type="image/webp">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-01.png">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-01.webp" type="image/webp">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-01.png">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fv-01.png" alt="施術風景" width="2400px" height="1424px">
               </picture>
             </div>
@@ -18,10 +18,10 @@
           <div class="swiper-slide">
             <div class="swiper-img">
             <picture>
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-02.webp" type="image/webp">
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-02.png">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-02.webp" type="image/webp">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-02.png">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-02.webp" type="image/webp">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-02.png">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-02.webp" type="image/webp">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-02.png">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fv-02.png" alt="施術風景" width="2400px" height="1424px">
               </picture>
             </div>
@@ -29,10 +29,10 @@
           <div class="swiper-slide">
             <div class="swiper-img">
             <picture>
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-03.webp" type="image/webp">
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-03.png">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-03.webp" type="image/webp">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-03.png">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-03.webp" type="image/webp">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-03.png">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-03.webp" type="image/webp">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/fv-sp-03.png">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fv-03.png" alt="施術風景" width="2400px" height="1424px">
               </picture>
             </div>
@@ -66,7 +66,7 @@
 <div class="concept__bg">
   <picture>
     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/concept-bg.webp" type="image/webp">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/concept-bg.png" alt="内装" width="2400px" height="720px" loading="lazy">
+    <img class="concept_img" src="<?php echo get_template_directory_uri(); ?>/assets/images/concept-bg.png" alt="内装" width="2400px" height="720px" loading="lazy">
   </picture>
 </div>
 
@@ -84,6 +84,7 @@
       <div class="menu__hair__box">
         <div class="menu__hair__item">
           <h4>Cut Menu</h4>
+          <hr>
           <div class="menu__hair__content">
             <div class="menu__hair__price">
               <p>カット</p>
@@ -97,6 +98,7 @@
         </div>
         <div class="menu__hair__item">
           <h4>Color Menu</h4>
+          <hr>
           <div class="menu__hair__content">
             <div class="menu__hair__price">
               <p>リタッチカラー</p>
@@ -122,6 +124,7 @@
         </div>
         <div class="menu__hair__item">
           <h4>Perm Menu</h4>
+          <hr>
           <div class="menu__hair__content">
             <div class="menu__hair__price">
               <p>パーマ</p>
@@ -142,6 +145,7 @@
       <div class="menu__hair__box">
         <div class="menu__hair__item">
           <h4>Straigh Menu</h4>
+          <hr>
           <div class="menu__hair__content">
             <div class="menu__hair__price">
               <p>縮毛矯正</p>
@@ -159,6 +163,7 @@
         </div>
         <div class="menu__hair__item">
           <h4>Treatment Menu</h4>
+          <hr>
           <div class="menu__hair__content">
             <div class="menu__hair__price">
               <p>トリートメント</p>
@@ -172,6 +177,7 @@
         </div>    
         <div class="menu__hair__item">
           <h4>Other Menu</h4>
+          <hr>
           <div class="menu__hair__content">
             <div class="menu__hair__price">
               <p>セット</p>
@@ -297,17 +303,21 @@
           <h2 class="section__title">TOKIO</h2>
           <span class="section__num">04</span>
         </div>
-        <p class="tokio__text">話題の「TOKIO インカラミ トリートメント」を導入しています。<br>
-  ホームケア用の販売もしております。詳細に関しましては、お問い合わせください。
-        </p>
-        <div class="contact__btn">
-          <a href="tel:055-288-0202">お問い合わせ</a>
-        </div>
-        <div class="tokio__img tokio__img__01">
-          <picture>
-          <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/tokio-01.webp" type="image/webp">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tokio-01.png" alt="ヘアケア商品" width="1126px" height="716px" loading="lazy">
-          </picture>
+        <div class="tokio__wrap">
+          <div>
+            <p class="tokio__text">話題の「TOKIO インカラミ トリートメント」を導入しています。<br>
+      ホームケア用の販売もしております。詳細に関しましては、お問い合わせください。
+            </p>
+            <div class="contact__btn">
+              <a href="tel:055-288-0202">お問い合わせ</a>
+            </div>
+          </div>
+          <div class="tokio__img tokio__img__01">
+            <picture>
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/tokio-01.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tokio-01.png" alt="ヘアケア商品" width="1126px" height="716px" loading="lazy">
+            </picture>
+          </div>
         </div>
       </div>
       <div class="tokio__img tokio__img__02">
@@ -336,18 +346,24 @@
       <div class="staff__member">
         <div class="staff__item">
           <p class="staff__position">Esthéticien</p>
-          <h3 class="staff__name">AYUMI<br>HARA</h3>
-          <h4 class="staff__name__ja">原 亜由美</h4>
+          <div class="staff__name__box">
+            <h3 class="staff__name">AYUMI<br>HARA</h3>
+            <h4 class="staff__name__ja">原 亜由美</h4>
+          </div>
         </div>
         <div class="staff__item">
           <p class="staff__position">Assistant</p>
-          <h3 class="staff__name">SAORI<br>MURAKAMI</h3>
-          <h4 class="staff__name__ja">村上 沙織</h4>
+          <div class="staff__name__box">
+            <h3 class="staff__name">SAORI<br>MURAKAMI</h3>
+            <h4 class="staff__name__ja">村上 沙織</h4>
+          </div>
         </div>
         <div class="staff__item">
           <p class="staff__position">Owner & Stylist</p>
-          <h3 class="staff__name">AZUSA<br>YAMAGATA</h3>
-          <h4 class="staff__name__ja">山形 梓</h4>
+          <div class="staff__name__box">
+            <h3 class="staff__name">AZUSA<br>YAMAGATA</h3>
+            <h4 class="staff__name__ja">山形 梓</h4>
+          </div>
         </div>
       </div>
     </div>
@@ -389,10 +405,10 @@ Close : 毎週月曜日 / 日曜日</p>
         <div class="swiper-slide">
             <div class="swiper-img">
               <picture>
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-01.webp" type="image/webp">
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-01.png">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-01.webp" type="image/webp">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-01.png">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-01.webp" type="image/webp">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-01.png">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-01.webp" type="image/webp">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-01.png">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-01.png" alt="施術風景" width="2732px" height="874px">
               </picture>
             </div>
@@ -400,10 +416,10 @@ Close : 毎週月曜日 / 日曜日</p>
           <div class="swiper-slide">
             <div class="swiper-img">
             <picture>
-            <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-02.webp" type="image/webp">
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-02.png">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-02.webp" type="image/webp">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-02.png">
+            <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-02.webp" type="image/webp">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-02.png">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-02.webp" type="image/webp">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-02.png">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-02.png" alt="施術風景" width="2732px" height="874px">
               </picture>
             </div>
@@ -411,10 +427,10 @@ Close : 毎週月曜日 / 日曜日</p>
           <div class="swiper-slide">
             <div class="swiper-img">
             <picture>
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-03.webp" type="image/webp">
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-03.png">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-03.webp" type="image/webp">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-03.png">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-03.webp" type="image/webp">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-03.png">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-03.webp" type="image/webp">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-03.png">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-03.png" alt="施術風景" width="2732px" height="874px">
               </picture>
             </div>
@@ -422,10 +438,10 @@ Close : 毎週月曜日 / 日曜日</p>
           <div class="swiper-slide">
             <div class="swiper-img">
             <picture>
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-04.webp" type="image/webp">
-                <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-04.png">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-04.webp" type="image/webp">
-                <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-04.png">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-04.webp" type="image/webp">
+                <source media="(min-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-04.png">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-04.webp" type="image/webp">
+                <source media="(max-width: 860px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/footer-sp-04.png">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-04.png" alt="施術風景" width="2732px" height="874px">
               </picture>
             </div>
